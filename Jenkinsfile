@@ -2,13 +2,19 @@
 pipeline {
   stages {
     stage("Build") {
-      print "Hello build"
+      steps {
+        echo "Hello build"
+      }
     }
-    stage("RunTests") {
-      print "Hello Tests"
+    stage("Test") {
+      steps {
+        echo "Hello tests"
+      }
     }
     stage("Deploy") {
-      print "Hello deploy"
+      steps {
+        echo "Hello deploy"
+      }
     }
   }
 }
